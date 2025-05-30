@@ -31,7 +31,7 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #1cb698;
+    color: #1CB698;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -99,3 +99,6 @@ nav ul li a:contains("Liquidación de Sueldos") {
     margin-top: 7%;
     text-align: center;
 }
+
+
+
