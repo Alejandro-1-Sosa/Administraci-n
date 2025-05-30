@@ -57,3 +57,45 @@ html{
     cursor: pointer;
     display: none;
 }
+/*LIQUIDACIÓN DE SUELDOS*/
+nav ul li a {
+    text-align: center;
+    display: block;
+    white-space: normal; /*Permite saltos de linea*/
+}
+
+/*Aplica solo si el texto contiene exactamente "Liquidación de Sueldos"*/
+nav ul li a:contains("Liquidación de Sueldos") {
+    white-space: pre-line;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        border-radius: 10px;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #1CB698;
+        padding: 10px 0;
+    }
+}
+
+.container {
+    margin-top: 10%;
+    text-align: center;
+}
