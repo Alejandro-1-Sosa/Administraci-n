@@ -22,6 +22,6 @@ function logout() {
     sessionStorage.clear();
 
     // Redirige al index.html
-    window.location.href = 'http://127.0.0.1:5500/index.html';
+    window.location.href = '#';
 
 }
