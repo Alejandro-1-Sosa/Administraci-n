@@ -15,3 +15,13 @@ function seleccionar(){
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
+
+// Función para el Cierre de Sección
+function logout() {
+    localStorage.clear();
+    sessionStorage.clear();
+
+    // Redirige al index.html
+    window.location.href = 'http://127.0.0.1:5500/index.html';
+
+}
