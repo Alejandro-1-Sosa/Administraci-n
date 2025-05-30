@@ -101,4 +101,8 @@ nav ul li a:contains("Liquidación de Sueldos") {
 }
 
 
+body {
+  padding-top: 80px;
+}
+
 
