@@ -105,4 +105,12 @@ body {
   padding-top: 80px;
 }
 
+/**/
+.pagination-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
 
