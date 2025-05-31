@@ -115,10 +115,11 @@ body {
 /*Estilo para 1 - administration.hmtl*/
 .content {
     display:flex;
-    align-items: stretch; /*Para centrar verticalmente*/
+    align-items: stretch; 
     gap: 20px;
     max-width: 900px;
-    margin: 0 auto 30px auto;
+    margin: 0 200px ; /*Quitás el centrado*/
+    justify-content: flex-start; /*Alinea todo a la izquierda*/
 }
 
 .content img {
