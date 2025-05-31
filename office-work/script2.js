@@ -25,3 +25,10 @@ function logout() {
     window.location.href = '#';
 
 }
+
+// Función para la pagina 1 - administration.html
+ document.querySelectorAll('.zoomable').forEach(img => {
+    img.addEventListener('click', () => {
+      img.classList.toggle('zoomed');
+    });
+  });
