@@ -146,9 +146,9 @@ body {
 /* Diseño responsivo para pantallas pequeñas */
 @media (max-width: 768px) {
     .content {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0 10px; /* Opcional: agrega un pequeño margen interno si querés evitar que el texto toque los bordes */
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
     }
 
     .content img {
