@@ -115,7 +115,7 @@ body {
 /*Estilo para 1 - administration.hmtl*/
 .content {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Permite que los hijos se acomoden en varias líneas */
     align-items: stretch;
     gap: 20px;
     max-width: 900px;
@@ -123,11 +123,19 @@ body {
     border-top: 2px solid #1CB698; /* Línea divisoria */
     margin-left: 140px;
     font-size: 18px;
-
 }
 
+@media (max-width:768px) {
+    .content {
+        flex-direction: column; /*Cambia a columna en pantallas pequeñas*/
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
 .content img {
-    width: 120px;
+    width: 100px; /* Imagen ocupa todo el ancho disponible */ 
     height: auto;
     margin-right: 5px;
     cursor: pointer;
