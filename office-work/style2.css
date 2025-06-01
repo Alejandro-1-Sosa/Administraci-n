@@ -115,24 +115,49 @@ body {
 /*Estilo para 1 - administration.hmtl*/
 .content {
     display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
+    align-items: flex-start;
     gap: 20px;
     max-width: 900px;
-    justify-content: flex-start;
-    border-top: 2px solid #1CB698; /* Línea divisoria */
-    margin-left: 140px;
+    margin: 20px auto;
     font-size: 18px;
-
-}
-
-.content img {
-    width: 120px;
-    height: auto;
-    margin-right: 5px;
-    cursor: pointer;
+    border-top: 2px solid #1CB698;
+    padding-top: 20px;
 }
 
 .content:first-of-type {
-    border-top: none; /* Evita línea arriba del primer bloque*/
+    border-top: none;
 }
+
+/* Asegura que el texto ocupe más espacio */
+.text-section {
+    flex: 2;
+    min-width: 0;
+}
+
+/* Imagen del lado derecho */
+.content img {
+    flex: 1;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    margin-left: auto;
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 10px; /* Opcional: agrega un pequeño margen interno si querés evitar que el texto toque los bordes */
+    }
+
+    .content img {
+        margin: 10px 0 0 0;
+        max-width: 100%;
+    }
+
+    .text-section {
+        width: 100%;
+    }
+}
+
