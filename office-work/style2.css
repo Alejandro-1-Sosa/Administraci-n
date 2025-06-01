@@ -115,32 +115,49 @@ body {
 /*Estilo para 1 - administration.hmtl*/
 .content {
     display: flex;
-    flex-wrap: wrap; /*Permite que los hijos se acomoden en varias líneas */
-    align-items: stretch;
+    align-items: flex-start;
     gap: 20px;
     max-width: 900px;
-    justify-content: flex-start;
-    border-top: 2px solid #1CB698; /* Línea divisoria */
-    margin-left: 140px;
+    margin: 20px auto;
     font-size: 18px;
-}
-
-@media (max-width:768px) {
-    .content {
-        flex-direction: column; /*Cambia a columna en pantallas pequeñas*/
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-
-
-.content img {
-    width: 100px; /* Imagen ocupa todo el ancho disponible */ 
-    height: auto;
-    margin-right: 5px;
-    cursor: pointer;
+    border-top: 2px solid #1CB698;
+    padding-top: 20px;
 }
 
 .content:first-of-type {
-    border-top: none; /* Evita línea arriba del primer bloque*/
+    border-top: none;
 }
+
+/* Asegura que el texto ocupe más espacio */
+.text-section {
+    flex: 2;
+    min-width: 0;
+}
+
+/* Imagen del lado derecho */
+.content img {
+    flex: 1;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    margin-left: auto;
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .content img {
+        margin: 10px 0 0 0;
+        max-width: 100%;
+    }
+
+    .text-section {
+        width: 100%;
+    }
+}
+
