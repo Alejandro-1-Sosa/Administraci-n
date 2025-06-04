@@ -165,5 +165,14 @@ li {
     text-align: justify;
 }
 
+/*Codigo para dividir texto haciendo uso de lineas divisorias*/
+.hr-custom {
+    width: 90%;
+    margin: 20px auto;
+    border: none;
+    border-top: 2px solid #1CB698;
+    border-radius: 2px;
+}
+
 
 
