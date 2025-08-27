@@ -174,5 +174,13 @@ li {
     border-radius: 2px;
 }
 
+hr {
+    height: 2px;
+    background-color:#1CB698;
+    border: none;
+    border-radius: 20px 0;
+    opacity: 1;
+}
+
 
 
