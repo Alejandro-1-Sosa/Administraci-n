@@ -56,58 +56,46 @@
 
     <h1 style="text-align: center; font-size: 25px">Liquidación de Sueldos</h1>
 
-   <!--Accordion con 4 Opciones-->
-   <div class="accordion" style="width: 95%; margin: 0 auto;" id="accordionPanelsStayOpenExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button btn btn-md "  type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-          <h4 style="text-align: center;"> Datos del Ejercicio </h4>
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-        <div class="accordion-body">       
+    <div>
+    
+      <p>Nombre Completo: <input type="text" name="required"></p>
 
-          <table>
-            <tr>
-              <td>Salario</td>
-              <td>78.600</td>
-            </tr>
-            <tr>
-              <td>Formulario 3100 tiene 1 menor al 100 % a cargo</td>
-              <td></td>
-            </tr>
+      <p>Nombre de la Empresa: <input type="text" name="required"></p>
 
-            <tr>
-              <th>Incidencias</th>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Promedio de Comisiones</td>
-              <td>4.600</td>
-            </tr>
-             <tr>
-              <td>Promedio de 3 Viaticos al Exterior</td>
-              <td>8.900</td>
-            </tr>
-             <tr>
-              <td>Promedio de Comisiones</td>
-              <td>4.600</td>
-            </tr>
-             <tr>
-              <td>Promedio de Comisiones</td>
-              <td>4.600</td>
-            </tr>
-           
-            
-          </table>
+      <p>RUT: <input type="text" name="required"></p>
 
-        </div>
-      </div> 
+      <p>Cargo dentro de la Empresa: <input type="text" name="required"></p>
+
+      <div>
+          Liquidación: <select name="page" id="page">
+          <option value="mensual">Mensual</option>
+          <option value="jornal">Jornal</option>
+        </select>  
+      </div>
+
+    <div>
+
+      <div id="mensual">
+          <p>Salario: <input type="text" name="required"></p>
+
+
+
+      </div>
+
+      <div id="jornal">
+
+      </div>
+
     </div>
-  
-  </div>
-    </div>
-</div>
+
+
+   
+
+
+
+
+
+
 
 <div class="pagination-container">
   <nav aria-label="Page navigation example">

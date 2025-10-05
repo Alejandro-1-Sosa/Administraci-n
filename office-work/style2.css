@@ -182,13 +182,25 @@ hr {
     opacity: 1;
 }
 
-/* Diseño de Tabla de Datos */
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+/* Diseño de menú desplegable de payroll.html */
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
 }
-th,td {
-    padding: 8px;
-    text-align: left;
+.contenedor-header header nav ul li a:hover{
+    color: #1cb698;
 }
+.nav-responsive{
+    background-color: #1cb698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
 
