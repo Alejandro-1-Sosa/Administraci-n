@@ -183,24 +183,26 @@ hr {
 }
 
 /* Diseño de menú desplegable de payroll.html */
-.contenedor-header header nav ul li a{
-    text-align: none;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
-.contenedor-header header nav ul li a:hover{
-    color: #1cb698;
+
+p {
+    margin-bottom: 10px;
 }
-.nav-responsive{
-    background-color: #1cb698;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
+
+input, select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.date {
+    display: none; /*se ocultan por defecto*/
 }
 
 

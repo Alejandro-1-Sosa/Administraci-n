@@ -31,4 +31,16 @@ function logout() {
     img.addEventListener('click', () => {
       img.classList.toggle('zoomed');
     });
-  });
+});
+
+// Función para la página 2 - payroll.html
+
+// Mostrar/ocultar campos según el tipo de liquidación seleccionado
+    const select = document.getElementById('pay');
+    const mensual = document.getElementById('mensual');
+    const jornal = document.getElementById('jornal');
+
+    select.addEventListener('change', () => {
+      mensual.style.display = select.value === 'mensual' ? 'block' : 'none';
+      jornal.style.display = select.value === 'jornal' ? 'block' : 'none';
+    });
