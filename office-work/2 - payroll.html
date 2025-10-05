@@ -67,17 +67,18 @@
         <label for="pay">Tipo de Liquidación:</label>  
           <select name="pay" id="pay">
             <option value="">-- Seleccionar --</option>        
-            <option value="mensual">Mensual</option>
-          <option value="jornal">Jornal</option>
+            <option value="mensual" >Mensual</option>
+          <option value="jornal" >Jornal</option>
         </select>    
       </div>
 
-      <div id="mensual" class="date">
-        <p>Salario Mensual: <input type="text" name="salario_mensual"></p>
-      </div>
-    
-      <div id="jornal" class="date">
-        <p>Salario por Jornal: <input type="text" name="salario_jornal"></p>
+      <!--Modal-->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modal-title"></h2>
+          <div id="modal-body"></div>
+        </div>
       </div>
 
     </div>

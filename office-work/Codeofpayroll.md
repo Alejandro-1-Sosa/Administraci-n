@@ -20,3 +20,12 @@
   </div>
     </div>
 </div>
+
+
+   <div id="mensual" class="date">
+        <p>Salario Mensual: <input type="text" name="salario_mensual"></p>
+      </div>
+    
+      <div id="jornal" class="date">
+        <p>Salario por Jornal: <input type="text" name="salario_jornal"></p>
+      </div>
