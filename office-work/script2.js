@@ -83,10 +83,7 @@ document.addEventListener('DOMContentLoaded', () =>{
         if (event.target === modal) {
             modal.select.display = 'none';
             select.value = '';
-        }
 
     });
   
 });
-
-
