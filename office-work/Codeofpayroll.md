@@ -29,3 +29,22 @@
       <div id="jornal" class="date">
         <p>Salario por Jornal: <input type="text" name="salario_jornal"></p>
       </div>
+
+
+          // Contenido dinámico
+        modalBody.innerHTML = select.value === 'mensual'
+           ? `
+              <p>Salario Mensual: <input type="text" placeholder="Ingrese el salario mensual"></p>
+              <p>Días Trabajados: <input type="number" placeholder="30"></p>
+              <p>Valor Jornal : <input type="text" ></p>
+              <p>Valor Hora : <input type="text" ></p>
+              <p>Valor Hora Extra Especial : <input type="text" ></p>
+              <br>
+
+                          
+              
+            `
+            : `
+              <p>Salario por Jornal: <input type="text" placeholder="Ingrese el salario por jornal"></p>
+              <p>Jornales Trabajados: <input type="number" placeholder="20"></p>
+            `;

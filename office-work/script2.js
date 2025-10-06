@@ -35,55 +35,33 @@ function logout() {
 
 // Función para la página 2 - payroll.html
 
-document.addEventListener('DOMContentLoaded', () =>{
+document.addEventListener('DOMContentLoaded', () =>{ 
    // Mostrar/ocultar campos según el tipo de liquidación seleccionado
     const select = document.getElementById('pay');
-    const modal = document.getElementById('modal');
+    const modalMensual = document.getElementById('mensual');
+    const modalJornal = document.getElementById('jornal');
     const closeBtn = document.querySelector('.close');
-    const modalTitle = document.getElementById('modal-title');
-    const modalBody = document.getElementById('modal-body');
-    
-    select.addEventListener('change', () => {
-        if (select.value === '') return;
-    
-        //Título dinámico
-        modalTitle.textContent = select.value === 'mensual' ? 'Liquidación Mensual' : 'Liquidación por jornal ';
-        
-        // Contenido dinámico
-        modalBody.innerHTML = select.value === 'mensual'
-           ? `
-              <p>Salario Mensual: <input type="text" placeholder="Ingrese el salario mensual"></p>
-              <p>Días Trabajados: <input type="number" placeholder="30"></p>
-              <p>Valor Jornal : <input type="text" ></p>
-              <p>Valor Hora : <input type="text" ></p>
-              <p>Valor Hora Extra Especial : <input type="text" ></p>
-              <br>
-              <table>
-              
-              
-              </table>
-            `
-            : `
-              <p>Salario por Jornal: <input type="text" placeholder="Ingrese el salario por jornal"></p>
-              <p>Jornales Trabajados: <input type="number" placeholder="20"></p>
-            `;
 
-        // Mostrar modal
-        modal.style.display = 'block';  
+    // Mostrar modal según la opción elegida
+    select.addEventListener('change', () => {
+        modalMensual.style.display = 'none';
+        modalJornal.style.display = 'none';
+
+        if (select.value === 'mensual') {
+            modalMensual.style.display = 'block';
+        } else if (select.value === ' jornal') {
+            modalJornal.style.display = 'block';
+        }
+
     });
 
     // Cerrar modal al hacer clic en la X
-    closeBtn.addEventListener('click', () => {
-        modal.style.display = 'none';
-        select.value = ''; // Reinicia el select
+  closeBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modalMensual.style.display = 'none';
+      modalJornal.style.display = 'none';
+      select.value = '';
     });
+  }); 
 
-    // Cerrar el modal al hacer click fuera del contenido
-    window.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            modal.select.display = 'none';
-            select.value = '';
-
-    });
-  
 });
